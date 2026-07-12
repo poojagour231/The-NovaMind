@@ -1,0 +1,763 @@
+/* ===================================================
+   ChatGPT 2006
+   Windows XP Boot Theme
+   style.css (PART 1)
+===================================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,
+body{
+
+    width:100%;
+    height:100%;
+
+    overflow:hidden;
+
+    font-family:Tahoma,Arial,sans-serif;
+
+    background:#003399;
+
+    color:#ffffff;
+
+}
+
+
+/* ===========================
+      BOOT SCREEN
+===========================*/
+
+#boot-screen{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:linear-gradient(
+        to bottom,
+        #0a2b8f,
+        #003399,
+        #001c70
+    );
+
+}
+
+
+.boot-container{
+
+    width:700px;
+
+    text-align:center;
+
+}
+
+
+/* ===========================
+      WINDOWS LOGO
+===========================*/
+
+.xp-logo h1{
+
+    font-size:38px;
+
+    font-weight:300;
+
+    letter-spacing:2px;
+
+}
+
+.xp-logo h2{
+
+    font-size:72px;
+
+    color:white;
+
+    margin-top:5px;
+
+    text-shadow:
+        0 0 12px #7db8ff;
+
+}
+
+.xp-logo p{
+
+    font-size:24px;
+
+    color:#ffd44d;
+
+    margin-top:8px;
+
+}
+
+
+/* ===========================
+      BOOT STATUS
+===========================*/
+
+.boot-status{
+
+    margin-top:70px;
+
+}
+
+.boot-status h3{
+
+    font-size:28px;
+
+    font-weight:normal;
+
+    margin-bottom:25px;
+
+}
+
+
+/* ===========================
+      PROGRESS BOX
+===========================*/
+
+.progress-box{
+
+    width:520px;
+
+    height:34px;
+
+    margin:auto;
+
+    border-radius:8px;
+
+    background:white;
+
+    border:2px solid #999;
+
+    overflow:hidden;
+
+}
+
+
+#progress-bar{
+
+    width:0%;
+
+    height:100%;
+
+    background:linear-gradient(
+        90deg,
+        #0057ff,
+        #7cc7ff,
+        #0057ff
+    );
+
+    transition:width .2s;
+
+}
+
+
+/* ===========================
+     TEXT
+===========================*/
+
+#progress-text{
+
+    margin-top:18px;
+
+    font-size:18px;
+
+    color:white;
+
+}
+
+#percentage{
+
+    margin-top:10px;
+
+    font-size:34px;
+
+    color:#ffee66;
+
+}
+
+
+/* ===========================
+      SYSTEM INFO
+===========================*/
+
+.system-info{
+
+    width:520px;
+
+    margin:50px auto 0;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:15px;
+
+}
+
+.system-info div{
+
+    background:rgba(255,255,255,.12);
+
+    padding:15px;
+
+    border-radius:8px;
+
+    border:1px solid rgba(255,255,255,.25);
+
+    text-align:left;
+
+    font-size:16px;
+
+}
+
+.system-info span{
+
+    float:right;
+
+    color:#ffff66;
+
+}
+/* ===================================================
+   DIAL-UP SCREEN
+===================================================*/
+
+#dialup-screen{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:linear-gradient(
+        to bottom,
+        #0048c9,
+        #003399
+    );
+
+}
+
+
+.dialup-window{
+
+    width:420px;
+
+    background:#ece9d8;
+
+    color:#000;
+
+    border:3px solid #0b57d0;
+
+    border-radius:8px;
+
+    overflow:hidden;
+
+    box-shadow:0 0 25px rgba(0,0,0,.45);
+
+}
+
+
+.dialup-window h2{
+
+    background:linear-gradient(
+        to bottom,
+        #0a67ff,
+        #0047c6
+    );
+
+    color:white;
+
+    padding:12px;
+
+    font-size:20px;
+
+}
+
+
+#dialup-status{
+
+    text-align:center;
+
+    margin-top:25px;
+
+    font-size:18px;
+
+}
+
+
+.dial-progress{
+
+    width:330px;
+
+    height:22px;
+
+    margin:25px auto;
+
+    background:white;
+
+    border:1px solid #888;
+
+    overflow:hidden;
+
+}
+
+
+#dial-progress-bar{
+
+    width:0%;
+
+    height:100%;
+
+    background:linear-gradient(
+        90deg,
+        #0d7bff,
+        #83d4ff,
+        #0d7bff
+    );
+
+}
+
+
+.speed-box{
+
+    text-align:center;
+
+    margin-bottom:25px;
+
+}
+
+
+.speed-box select{
+
+    margin-left:10px;
+
+    padding:6px;
+
+    font-size:15px;
+
+}
+
+
+/* ===================================================
+   XP NOTIFICATION
+===================================================*/
+
+#notification-area{
+
+    position:fixed;
+
+    right:20px;
+
+    bottom:20px;
+
+    z-index:999;
+
+}
+
+
+.notification{
+
+    width:260px;
+
+    background:#fffff8;
+
+    color:#000;
+
+    border:2px solid #3d7cff;
+
+    border-radius:8px;
+
+    padding:15px;
+
+    box-shadow:0 0 18px rgba(0,0,0,.3);
+
+}
+
+
+.notification h4{
+
+    color:#0054d6;
+
+    margin-bottom:8px;
+
+}
+
+
+/* ===================================================
+   VIRUS POPUP
+===================================================*/
+
+#virus-popup{
+
+    position:fixed;
+
+    top:50%;
+
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    z-index:9999;
+
+}
+
+
+.popup-window{
+
+    width:380px;
+
+    background:#ece9d8;
+
+    border:3px solid #0056d6;
+
+    border-radius:8px;
+
+    overflow:hidden;
+
+}
+
+
+.popup-title{
+
+    background:linear-gradient(
+        to bottom,
+        #0b6cff,
+        #0045b8
+    );
+
+    color:white;
+
+    padding:10px;
+
+    font-weight:bold;
+
+}
+
+
+.popup-body{
+
+    padding:25px;
+
+    text-align:center;
+
+    color:black;
+
+}
+
+
+.popup-body h3{
+
+    margin-bottom:12px;
+
+}
+
+
+.popup-body button{
+
+    margin-top:20px;
+
+    width:90px;
+
+    height:34px;
+
+    border:none;
+
+    background:#0b69ff;
+
+    color:white;
+
+    border-radius:5px;
+
+    cursor:pointer;
+
+}
+
+.popup-body button:hover{
+
+    background:#0052cc;
+
+}
+
+
+/* ===================================================
+   COMMON
+===================================================*/
+
+.hidden{
+
+    display:none;
+
+}
+/* ===================================================
+   SYSTEM MONITOR
+===================================================*/
+
+#system-monitor{
+
+    position:fixed;
+
+    top:20px;
+
+    right:20px;
+
+    width:230px;
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(8px);
+
+    border:1px solid rgba(255,255,255,.2);
+
+    border-radius:10px;
+
+    padding:15px;
+
+}
+
+.meter{
+
+    margin-bottom:20px;
+
+    color:white;
+
+    font-size:15px;
+
+}
+
+.meter-bar{
+
+    width:100%;
+
+    height:18px;
+
+    background:#d8d8d8;
+
+    border-radius:4px;
+
+    overflow:hidden;
+
+    margin-top:8px;
+
+}
+
+#cpu-bar{
+
+    width:18%;
+
+    height:100%;
+
+    background:#19ff63;
+
+    animation:cpuAnimation 2s infinite alternate;
+
+}
+
+#ram-bar{
+
+    width:45%;
+
+    height:100%;
+
+    background:#ffd23b;
+
+    animation:ramAnimation 3s infinite alternate;
+
+}
+
+#ai-bar{
+
+    width:12%;
+
+    height:100%;
+
+    background:#5bb6ff;
+
+    animation:aiAnimation 4s infinite alternate;
+
+}
+
+
+/* ===================================================
+   ANIMATIONS
+===================================================*/
+
+@keyframes cpuAnimation{
+
+    0%{width:18%;}
+
+    25%{width:35%;}
+
+    50%{width:62%;}
+
+    75%{width:40%;}
+
+    100%{width:82%;}
+
+}
+
+@keyframes ramAnimation{
+
+    0%{width:30%;}
+
+    50%{width:58%;}
+
+    100%{width:42%;}
+
+}
+
+@keyframes aiAnimation{
+
+    0%{width:8%;}
+
+    50%{width:55%;}
+
+    100%{width:28%;}
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+@keyframes fadeOut{
+
+    from{
+
+        opacity:1;
+
+    }
+
+    to{
+
+        opacity:0;
+
+    }
+
+}
+
+@keyframes blink{
+
+    50%{
+
+        opacity:.4;
+
+    }
+
+}
+
+
+/* ===================================================
+   EFFECTS
+===================================================*/
+
+.boot-container{
+
+    animation:fadeIn 1.4s;
+
+}
+
+.notification{
+
+    animation:fadeIn .8s;
+
+}
+
+.popup-window{
+
+    animation:fadeIn .4s;
+
+}
+
+#percentage{
+
+    animation:blink 1s infinite;
+
+}
+
+
+/* ===================================================
+   RESPONSIVE
+===================================================*/
+
+@media(max-width:768px){
+
+.boot-container{
+
+    width:95%;
+
+}
+
+.progress-box{
+
+    width:100%;
+
+}
+
+.system-info{
+
+    width:100%;
+
+    grid-template-columns:1fr;
+
+}
+
+#system-monitor{
+
+    width:180px;
+
+    right:10px;
+
+    top:10px;
+
+}
+
+.popup-window{
+
+    width:90%;
+
+}
+
+.dialup-window{
+
+    width:90%;
+
+}
+
+}
+
+

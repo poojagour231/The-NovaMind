@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ChatGPT 2006</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<!-- ========================= -->
+<!-- WINDOWS XP BOOT SCREEN -->
+<!-- ========================= -->
+
+<div id="boot-screen">
+
+    <div class="boot-container">
+
+        <div class="xp-logo">
+
+            <h1>Microsoft</h1>
+
+            <h2>Windows XP</h2>
+
+            <p>Professional</p>
+
+        </div>
+
+        <div class="boot-status">
+
+            <h3>Starting ChatGPT 2006...</h3>
+
+            <div class="progress-box">
+
+                <div id="progress-bar"></div>
+
+            </div>
+
+            <p id="progress-text">Initializing System...</p>
+
+            <h4 id="percentage">0%</h4>
+
+        </div>
+
+        <div class="system-info">
+
+            <div>
+                CPU :
+                <span id="cpu">Detecting...</span>
+            </div>
+
+            <div>
+                RAM :
+                <span id="ram">512 MB</span>
+            </div>
+
+            <div>
+                AI Core :
+                <span id="ai-version">
+                    GPT Beta 0.9
+                </span>
+            </div>
+
+            <div>
+                Network :
+                <span id="network">
+                    Offline
+                </span>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ========================= -->
+<!-- DIAL UP SCREEN -->
+<!-- Hidden initially -->
+<!-- ========================= -->
+
+<div id="dialup-screen" class="hidden">
+
+    <div class="dialup-window">
+
+        <h2>Dial-Up Networking</h2>
+
+        <p id="dialup-status">
+
+            Connecting...
+
+        </p>
+
+        <div class="dial-progress">
+
+            <div id="dial-progress-bar"></div>
+
+        </div>
+
+        <div class="speed-box">
+
+            Connection Speed
+
+            <select id="speed">
+
+                <option>28 kbps</option>
+
+                <option selected>56 kbps</option>
+
+                <option>ISDN</option>
+
+                <option>DSL</option>
+
+            </select>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- ========================= -->
+<!-- XP Notification Area -->
+<!-- ========================= -->
+
+<div id="notification-area" class="hidden">
+
+    <div class="notification">
+
+        <h4>AI Connected</h4>
+
+        <p>Secure connection established.</p>
+
+    </div>
+
+</div>
+
+
+<!-- ========================= -->
+<!-- Fake Virus Popup -->
+<!-- ========================= -->
+
+<div id="virus-popup" class="hidden">
+
+    <div class="popup-window">
+
+        <div class="popup-title">
+
+            Windows Security Alert
+
+        </div>
+
+        <div class="popup-body">
+
+            <h3>⚠ Virus Found</h3>
+
+            <p>
+
+                Oops... False Alarm.
+
+            </p>
+
+            <button id="popup-btn">
+
+                OK
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ========================= -->
+<!-- System Monitor -->
+<!-- ========================= -->
+
+<div id="system-monitor">
+
+    <div class="meter">
+
+        CPU
+
+        <div class="meter-bar">
+
+            <div id="cpu-bar"></div>
+
+        </div>
+
+    </div>
+
+    <div class="meter">
+
+        RAM
+
+        <div class="meter-bar">
+
+            <div id="ram-bar"></div>
+
+        </div>
+
+    </div>
+
+    <div class="meter">
+
+        AI Memory
+
+        <div class="meter-bar">
+
+            <div id="ai-bar"></div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ========================= -->
+<!-- Hidden Audio -->
+<!-- ========================= -->
+
+<audio id="startup-audio">
+
+    <source src="/assets/audio/startup.mp3" type="audio/mpeg">
+
+</audio>
+
+<audio id="dialup-audio">
+
+    <source src="/assets/audio/dialup.mp3" type="audio/mpeg">
+
+</audio>
+
+<audio id="click-audio">
+
+    <source src="/assets/audio/click.wav" type="audio/wav">
+
+</audio>
+
+<audio id="error-audio">
+
+    <source src="/assets/audio/error.wav" type="audio/wav">
+
+</audio>
+
+
+<!-- ========================= -->
+<!-- JavaScript -->
+<!-- ========================= -->
+
+<script src="{{ url_for('static', filename='js/boot.js') }}"></script>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Settings</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/settings.css') }}">
+
+</head>
+
+<body>
+
+<div class="window">
+
+<div class="titlebar">
+
+<span>Settings</span>
+
+<button onclick="closeSettings()">X</button>
+
+</div>
+
+<div class="content">
+
+<h2>Appearance</h2>
+
+<button onclick="changeWallpaper()">Change Wallpaper</button>
+
+<hr>
+
+<h2>Sound</h2>
+
+<label>
+
+<input type="checkbox" checked>
+
+Startup Sound
+
+</label>
+
+<hr>
+
+<h2>Theme</h2>
+
+<button onclick="xpTheme()">Windows XP Theme</button>
+
+</div>
+
+</div>
+
+<script src="{{ url_for('static', filename='js/settings.js') }}"></script>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ChatGPT 2006 - Login</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+
+</head>
+
+<body>
+
+<div class="login-screen">
+    
+
+    <div class="login-box">
+
+        <div class="user-avatar">
+
+            <img src="{{ url_for('static', filename='images/icons8-user-profile-50.png') }}" alt="User">
+
+        </div>
+
+        <h1>Welcome</h1>
+
+        <h2>Pooja</h2>
+
+        <p>ChatGPT 2006 User</p>
+
+        <div class="login-form">
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Enter Password (Optional)"
+            >
+
+            <button id="login-btn">
+
+                Log In
+
+            </button>
+
+        </div>
+
+        <div class="login-footer">
+
+            <p>Microsoft Windows XP Professional</p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='js/login.js') }}"></script>
+
+</body>
+
+</html>

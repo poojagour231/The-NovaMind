@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ChatGPT 2006 Desktop</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='css/desktop.css') }}">
+
+</head>
+
+<body>
+
+<div class="desktop">
+
+<!-- LEFT ICONS -->
+
+<div class="desktop-icons">
+
+<div class="desktop-icon" onclick="openChat()">
+
+<img src="{{ url_for('static', filename='icons/icons8-chatgpt-50.png') }}">
+
+<span>ChatGPT</span>
+
+</div>
+
+<div class="desktop-icon" onclick="openComputer()">
+
+<img src="{{ url_for('static', filename='icons/icons8-my-computer-50.png') }}">
+
+<span>My Computer</span>
+
+</div>
+
+<div class="desktop-icon" onclick="openInternet()">
+
+<img src="{{ url_for('static', filename='icons/icons8-internet-explorer-48.png') }}">
+
+<span>Internet Explorer</span>
+
+</div>
+
+<div class="desktop-icon" onclick="openSettings()">
+
+<img src="{{ url_for('static', filename='icons/icons8-settings-50.png') }}">
+
+<span>Settings</span>
+
+</div>
+
+<div class="desktop-icon" onclick="openRecycle()">
+
+<img src="{{ url_for('static', filename='icons/icons8-recycle-bin-48.png') }}">
+
+<span>Recycle Bin</span>
+
+</div>
+
+<div class="desktop-icon" onclick="openAbout()">
+
+<img src="{{ url_for('static', filename='icons/icons8-folder-48.png') }}">
+
+<span>About</span>
+
+</div>
+
+</div>
+
+
+
+<!-- START MENU -->
+
+<div id="startMenu" class="start-menu">
+
+<div class="profile">
+
+<img src="{{ url_for('static', filename='images/icons8-user-profile-50.png') }}">
+
+<h3>Pooja Gour</h3>
+
+</div>
+
+<hr>
+
+<div onclick="openChat()">
+💬 ChatGPT
+</div>
+
+<div onclick="openComputer()">
+🖥 My Computer
+</div>
+
+<div onclick="openInternet()">
+🌐 Internet Explorer
+</div>
+
+<div onclick="openSettings()">
+⚙ Settings
+</div>
+
+<div onclick="openAbout()">
+ℹ About
+</div>
+
+</div>
+
+
+
+<!-- TASKBAR -->
+
+<div class="taskbar">
+
+<button id="startBtn">
+
+Start
+
+</button>
+
+<div class="task-title">
+
+ChatGPT 2006
+
+</div>
+
+<div id="clock">
+
+00:00
+
+</div>
+
+</div>
+
+</div>
+
+<script src="{{ url_for('static', filename='js/desktop.js') }}"></script>
+
+</body>
+
+</html>
